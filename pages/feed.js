@@ -1,4 +1,5 @@
 import Figure from '../components/Figure';
+import Navbar from '../components/Navbar';
 import styles from '../styles/Feed.module.css'
 
 export const getStaticProps = async () => {
@@ -23,6 +24,7 @@ export const getStaticProps = async () => {
 const Feed = ({ apod }) => {
     return (
         <>
+            <Navbar loginStatus={true}/>
             <h1>Brought to you using NASA&apos;s Astronomy Photo of the Day API</h1>
             <main className={styles.main}>
                 {apod && apod.map(picture =>

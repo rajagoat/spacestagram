@@ -1,14 +1,17 @@
 import Link from "next/link";
 
-const Navbar = () => {
+const Navbar = ({ loginStatus }) => {
     return (
         <nav>
-            <Link href={'/'}>
-                <a>Home</a>
-            </Link>
-            <Link href={'/feed'}>
-                <a>Login</a>
-            </Link>
+            {!loginStatus ?
+                <Link href={'/feed'}>
+                    <a>Login</a>
+                </Link>
+                :
+                <Link href={'/'}>
+                    <a>Logout</a>
+                </Link>
+            }
         </nav>
     );
 }
