@@ -2,7 +2,20 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export const getStaticProps = async () => {
+  const API = 'PyzP77Efyzi699c1qrWqxJ4adGByZLYpTNyCmbOs';
+  const res = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${API}&start_date=2021-12-14&end_date=2021-12-21`)
+  const data = await res.json();
+  const images = data.map(figure => {
+    return figure.url;
+  }).slice(0, 6);
+
+  return {
+      props: { images }
+  }
+}
+
+export default function Home({ images }) {
   return (
     <div className={styles.landing}>
       {/* <Head>
@@ -35,6 +48,18 @@ export default function Home() {
         “For I dipped into the Future, far as human eye could see; saw the vision of the world, and all the wonder that would be.”
       </blockquote>
       <p className={styles.quoteAuthor}>— Alfred, Lord Tennyson, 1842</p>
+      <div className={styles.imagePromotion}>
+        <h1>Image Sharing from the Final Frontier</h1>
+        <div className={styles.sampleImages}>
+          {images && images.map(image =>
+            <Image key={image} src={image} alt='' width={400} height={500}/>
+          )}
+        </div>
+      </div>
+      <div className={styles.missionStatement}>
+        <h1>Mission Statement</h1>
+        <h3>Make Commerce Better for the Universe and Beyond</h3>
+      </div>
     </div>
   )
 }

@@ -69,3 +69,24 @@
   font-weight: var(--bold);
   font-size: 20px;
 }
+
+.imagePromotion {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.imagePromotion h1 {
+  font-weight: var(--bold);
+}
+
+.sampleImages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 50px 50px;
+  column-gap: 50px;
+  row-gap: 50px;
+}
+
+.sampleImages * {
+  border-radius: 10px;
+}
