@@ -1,0 +1,22 @@
+@media screen and (min-width: 980px) {
+    .main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+        justify-items: center;
+    }
+}
+
+.main {
+    display: grid;
+    justify-items: center;
+    
+}
