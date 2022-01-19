@@ -11,6 +11,10 @@
 
 .figure > button {
     position: absolute;
+    background: transparent;
+    border: 0;
+    margin-top: 5px;
+    backdrop-filter: blur(1px);
 }
 
 .figureCaption > * {

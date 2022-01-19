@@ -1,6 +1,8 @@
 import Image from "next/image";
 import styles from '../styles/Figure.module.css'
 import { useState } from "react";
+import notLikedIcon from '../public/icons/heart-outlined.svg'
+import likedIcon from '../public/icons/heart-filled.svg'
 
 const Figure = ({ picture }) => {
     const [liked, setLiked] = useState(false);
@@ -22,9 +24,13 @@ const Figure = ({ picture }) => {
                 <p className={styles.explanation}>{picture.explanation}</p>
             </figcaption>
             {!liked ?
-                <button type="button" onClick={toggleLike}>Like</button>
+                <button type="button" onClick={toggleLike}>
+                    <Image src={notLikedIcon} width={50} height={50}/>
+                </button>
                 :
-                <button type="button" onClick={toggleLike}>Unlike</button>
+                <button type="button" onClick={toggleLike}>
+                    <Image src={likedIcon} width={50} height={50}/>
+                </button>
             }
         </figure>
     );
