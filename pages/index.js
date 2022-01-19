@@ -31,20 +31,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed culpa quasi, minima optio adipisci maxime omnis, mollitia odit suscipit, praesentium ipsum eius. Quae dolorem mollitia dignissimos neque ex enim!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed culpa quasi, minima optio adipisci maxime omnis, mollitia odit suscipit, praesentium ipsum eius. Quae dolorem mollitia dignissimos neque ex enim!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed culpa quasi, minima optio adipisci maxime omnis, mollitia odit suscipit, praesentium ipsum eius. Quae dolorem mollitia dignissimos neque ex enim!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed culpa quasi, minima optio adipisci maxime omnis, mollitia odit suscipit, praesentium ipsum eius. Quae dolorem mollitia dignissimos neque ex enim!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed culpa quasi, minima optio adipisci maxime omnis, mollitia odit suscipit, praesentium ipsum eius. Quae dolorem mollitia dignissimos neque ex enim!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed culpa quasi, minima optio adipisci maxime omnis, mollitia odit suscipit, praesentium ipsum eius. Quae dolorem mollitia dignissimos neque ex enim!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed culpa quasi, minima optio adipisci maxime omnis, mollitia odit suscipit, praesentium ipsum eius. Quae dolorem mollitia dignissimos neque ex enim!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed culpa quasi, minima optio adipisci maxime omnis, mollitia odit suscipit, praesentium ipsum eius. Quae dolorem mollitia dignissimos neque ex enim!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed culpa quasi, minima optio adipisci maxime omnis, mollitia odit suscipit, praesentium ipsum eius. Quae dolorem mollitia dignissimos neque ex enim!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed culpa quasi, minima optio adipisci maxime omnis, mollitia odit suscipit, praesentium ipsum eius. Quae dolorem mollitia dignissimos neque ex enim!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed culpa quasi, minima optio adipisci maxime omnis, mollitia odit suscipit, praesentium ipsum eius. Quae dolorem mollitia dignissimos neque ex enim!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed culpa quasi, minima optio adipisci maxime omnis, mollitia odit suscipit, praesentium ipsum eius. Quae dolorem mollitia dignissimos neque ex enim!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed culpa quasi, minima optio adipisci maxime omnis, mollitia odit suscipit, praesentium ipsum eius. Quae dolorem mollitia dignissimos neque ex enim!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed culpa quasi, minima optio adipisci maxime omnis, mollitia odit suscipit, praesentium ipsum eius. Quae dolorem mollitia dignissimos neque ex enim!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed culpa quasi, minima optio adipisci maxime omnis, mollitia odit suscipit, praesentium ipsum eius. Quae dolorem mollitia dignissimos neque ex enim!</p>
+      <blockquote className={styles.quote} cite='https://er.jsc.nasa.gov/SEH/quotes.html'>
+        “For I dipped into the Future, far as human eye could see; saw the vision of the world, and all the wonder that would be.”
+      </blockquote>
+      <p className={styles.quoteAuthor}>— Alfred, Lord Tennyson, 1842</p>
     </div>
   )
 }
