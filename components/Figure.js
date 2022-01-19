@@ -17,7 +17,7 @@ const Figure = ({ picture }) => {
 
     return (
         <figure className={styles.figure}>
-            <Image src={picture.url} width={500} height={400} />
+            <Image src={picture.url} width={500} height={400} alt=""/>
             <figcaption className={styles.figureCaption}>
                 <h1>{picture.title}</h1>
                 <p className={styles.date}>{picture.date}</p>
@@ -25,11 +25,11 @@ const Figure = ({ picture }) => {
             </figcaption>
             {!liked ?
                 <button type="button" onClick={toggleLike}>
-                    <Image src={notLikedIcon} width={50} height={50}/>
+                    <Image src={notLikedIcon} width={50} height={50} alt="like button"/>
                 </button>
                 :
                 <button type="button" onClick={toggleLike}>
-                    <Image src={likedIcon} width={50} height={50}/>
+                    <Image src={likedIcon} width={50} height={50} alt="unlike button"/>
                 </button>
             }
         </figure>

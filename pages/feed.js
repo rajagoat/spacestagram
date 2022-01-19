@@ -23,7 +23,7 @@ export const getStaticProps = async () => {
 const Feed = ({ apod }) => {
     return (
         <>
-            <h1>Brought to you using NASA's Astronomy Photo of the Day API</h1>
+            <h1>Brought to you using NASA&apos;s Astronomy Photo of the Day API</h1>
             <main className={styles.main}>
                 {apod && apod.map(picture =>
                     <div key={picture.date}>
