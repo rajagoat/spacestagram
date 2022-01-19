@@ -57,8 +57,8 @@ export default function Home({ images }) {
         </div>
       </div>
       <div className={styles.missionStatement}>
-        <h1>Mission Statement</h1>
-        <h3>Make Commerce Better for the Universe and Beyond</h3>
+        <h1>Our Mission</h1>
+        <h3>Make Commerce Better for Everyone,<br/> Including the Whole Entire Universe</h3>
       </div>
     </div>
   )
