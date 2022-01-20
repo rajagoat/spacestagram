@@ -1,6 +1,7 @@
 import Figure from '../components/Figure';
 import Navbar from '../components/Navbar';
 import styles from '../styles/Feed.module.css'
+import Head from 'next/head'
 
 export const getStaticProps = async () => {
     const API = 'PyzP77Efyzi699c1qrWqxJ4adGByZLYpTNyCmbOs';
@@ -24,12 +25,17 @@ export const getStaticProps = async () => {
 const Feed = ({ apod }) => {
     return (
         <>
-            <Navbar loginStatus={true}/>
+            <Head>
+                <title>Spacestagram | Feed</title>
+                <meta name="description" content="Feed which displays all the most exciting space-related sights and more!" />
+                <link rel="icon" href="/icons/logo.svg" />
+            </Head>
+            <Navbar loginStatus={true} />
             <h1 className={styles.title}>Your Feed</h1>
             <main className={styles.main}>
                 {apod && apod.map(picture =>
                     <div key={picture.date}>
-                        <Figure picture={picture}/>
+                        <Figure picture={picture} />
                     </div>
                 )}
             </main>
