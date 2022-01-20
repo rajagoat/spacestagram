@@ -5,10 +5,6 @@ import notLikedIcon from '../public/icons/heart-outlined.svg'
 import likedIcon from '../public/icons/heart-filled.svg'
 
 const Figure = ({ picture }) => {
-    const truncate = (str, no_words) => {
-        return str.split(" ").splice(0, no_words).join(" ") + "...";
-    }
-
     const [liked, setLiked] = useState(false);
 
     const toggleLike = () => {
@@ -25,7 +21,7 @@ const Figure = ({ picture }) => {
             <figcaption className={styles.figureCaption}>
                 <h1>{picture.title}</h1>
                 <p className={styles.date}>{picture.date}</p>
-                <p className={styles.explanation}>{truncate(picture.explanation, 30)}</p>
+                <p className={styles.explanation}>{picture.explanation}</p>
             </figcaption>
             {!liked ?
                 <button type="button" onClick={toggleLike}>

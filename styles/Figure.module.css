@@ -17,10 +17,6 @@
     backdrop-filter: blur(1px);
 }
 
-.figure > button:hover {
-  cursor: pointer;
-}
-
 .figureCaption > * {
     margin: 0;
 }
@@ -29,7 +25,7 @@
     margin-left: 10px;
     padding-right: 14px;
     max-width: 95%;
-    height: 300px;
+    height: 400px;
     overflow-y: scroll;
 }
 
