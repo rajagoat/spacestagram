@@ -18,5 +18,10 @@
 .main {
     display: grid;
     justify-items: center;
-    
+    margin: 50px 0;
+}
+
+.title {
+    font-weight: var(--bold);
+    margin-left: 40px;
 }

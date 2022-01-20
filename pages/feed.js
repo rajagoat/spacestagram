@@ -25,7 +25,7 @@ const Feed = ({ apod }) => {
     return (
         <>
             <Navbar loginStatus={true}/>
-            <h1>Brought to you using NASA&apos;s Astronomy Photo of the Day API</h1>
+            <h1 className={styles.title}>Your Feed</h1>
             <main className={styles.main}>
                 {apod && apod.map(picture =>
                     <div key={picture.date}>

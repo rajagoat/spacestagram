@@ -17,7 +17,7 @@ const Figure = ({ picture }) => {
 
     return (
         <figure className={styles.figure}>
-            <Image src={picture.url} width={500} height={400} alt=""/>
+            <Image src={picture.url} width={500} height={400} alt="" priority/>
             <figcaption className={styles.figureCaption}>
                 <h1>{picture.title}</h1>
                 <p className={styles.date}>{picture.date}</p>
