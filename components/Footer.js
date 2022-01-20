@@ -31,7 +31,7 @@ const Footer = () => {
                     <p>Copyright &copy; {date}</p>
                     <div className={styles.socialMedia}>
                         <a
-                            href="https://github.com/rajagoat"
+                            href="https://github.com/rajagoat/spacestagram"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
