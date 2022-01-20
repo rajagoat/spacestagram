@@ -3,6 +3,10 @@
 Made for the Shopify Front End Developer Intern Challenge - Summer 2022.
 Click [here](https://spacestagram-rajagoat.vercel.app/) to view the deployed site.
 
+## Functionality
+
+Users can "log in" (authentication not implemented) to view their feed, which pulls from the NASA Astronomy Picture of the Day (APOD) API. Site is fully responsive and built with the Next.js framework.
+
 ---
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
