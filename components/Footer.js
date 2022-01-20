@@ -14,7 +14,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <h4>Image and caption data courtesy to NASA Astronomy Photo of the Day (APOD) API</h4>
+                    <h4>Image and caption data courtesy of NASA Astronomy Photo of the Day (APOD) API</h4>
                 </a>
 
                 <div className={styles.credits}>
