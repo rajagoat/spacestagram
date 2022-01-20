@@ -29,7 +29,7 @@
     margin-left: 10px;
     padding-right: 14px;
     max-width: 95%;
-    height: 300px;
+    height: 260px;
     overflow-y: scroll;
 }
 
@@ -75,4 +75,18 @@
 
 .explanation {
     margin-bottom: 16px;
+}
+
+.truncateButton {
+  font-family: 'Montserrat', sans-serif;
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: 17px;
+  color: var(--button-primary);
+  margin-bottom: 10px;
+}
+
+.truncateButton:hover {
+  cursor: pointer;
 }

@@ -22,6 +22,10 @@
   text-decoration: none;
 }
 
+.siteInfo h4 {
+  margin-bottom: 40px;
+}
+
 .siteInfo h4:hover{
   color: #78757a;
 }
