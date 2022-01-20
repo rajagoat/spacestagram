@@ -103,6 +103,20 @@
   border-radius: 10px;
 }
 
+@media screen and (max-width: 980px) {
+  .sampleImages {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .sampleImages {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .missionStatement {
   margin-top: 100px;
   margin-bottom: 100px;

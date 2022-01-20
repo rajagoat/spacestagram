@@ -55,3 +55,10 @@
 .socialMedia * {
   margin-right: 10px;
 }
+
+@media screen and (max-width: 615px) {
+  .credits {
+      flex-direction: column;
+      align-items: center;
+  }
+}

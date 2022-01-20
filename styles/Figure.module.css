@@ -90,3 +90,9 @@
 .truncateButton:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 615px) {
+  .figureCaption {
+      height: 320px;
+  }
+}
